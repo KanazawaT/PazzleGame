@@ -26,7 +26,12 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//↓disel
 
 	//↓kiyo
-		//
+	SetFontSize(64);                             //サイズを64に変更
+	SetFontThickness(1);                         //太さを1に変更
+	ChangeFont("HGS創英角ﾎﾟｯﾌﾟ体");                     //種類をHGS創英角ﾎﾟｯﾌﾟ体に変更
+	ChangeFontType(DX_FONTTYPE_ANTIALIASING);     //アンチエイリアスフォントに変更
+	DrawFormatString(0, 0, GetColor(0, 255, 0), "न     म       स्      (ते)"); // 文字を描画する
+
 
 	//↓2403
 

@@ -17,6 +17,13 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	DrawBox(640, 480, 320, 240, 0xffffff, TRUE);
 
+	//↓たみ
+
+	//↓felsen
+
+	//↓disel
+
+
 	WaitKey();				// キー入力待ち
 
 	DxLib_End();				// ＤＸライブラリ使用の終了処理

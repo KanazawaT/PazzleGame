@@ -1,36 +1,37 @@
-ï»¿#include "DxLib.h"
+#include "DxLib.h"
 
-// ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ WinMain ã‹ã‚‰å§‹ã¾ã‚Šã¾ã™
+// ƒvƒƒOƒ‰ƒ€‚Í WinMain ‚©‚çn‚Ü‚è‚Ü‚·
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
 {
 
 	ChangeWindowMode(TRUE);
 
-	if (DxLib_Init() == -1)		// ï¼¤ï¼¸ãƒ©ã‚¤ãƒ–ãƒ©ãƒªåˆæœŸåŒ–å‡¦ç†
+	if (DxLib_Init() == -1)		// ‚c‚wƒ‰ƒCƒuƒ‰ƒŠ‰Šú‰»ˆ—
 	{
-		return -1;			// ã‚¨ãƒ©ãƒ¼ãŒèµ·ããŸã‚‰ç›´ã¡ã«çµ‚äº†
+		return -1;			// ƒGƒ‰[‚ª‹N‚«‚½‚ç’¼‚¿‚ÉI—¹
 	}
 
-	DrawPixel(320, 240, GetColor(255, 255, 255));	// ç‚¹ã‚’æ‰“ã¤
+	DrawPixel(320, 240, GetColor(255, 255, 255));	// “_‚ğ‘Å‚Â
 
 	DrawBox(0, 0, 320, 240, 0xffffff, TRUE);
 
 	DrawBox(640, 480, 320, 240, 0xffffff, TRUE);
 
-	//â†“ãŸã¿
+	//«‚½‚İ
+	//a
 
-	//â†“felsen
-	//à¤¨à¤®à¤¸à¥à¤¤à¥‡
-	//â†“disel
+	//«felsen
 
-	//â†“kiyo
+	//«disel
 
-	//â†“2403
+	//«kiyo
+
+	//«2403
 
 
-	WaitKey();				// ã‚­ãƒ¼å…¥åŠ›å¾…ã¡
+	WaitKey();				// ƒL[“ü—Í‘Ò‚¿
 
-	DxLib_End();				// ï¼¤ï¼¸ãƒ©ã‚¤ãƒ–ãƒ©ãƒªä½¿ç”¨ã®çµ‚äº†å‡¦ç†
+	DxLib_End();				// ‚c‚wƒ‰ƒCƒuƒ‰ƒŠg—p‚ÌI—¹ˆ—
 
-	return 0;				// ã‚½ãƒ•ãƒˆã®çµ‚äº† 
+	return 0;				// ƒ\ƒtƒg‚ÌI—¹ 
 }

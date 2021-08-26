@@ -28,7 +28,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//↓kiyo
 
 	//↓2403
-
+	//أهلا
 
 	WaitKey();				// キー入力待ち
 

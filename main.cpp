@@ -21,7 +21,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//a
 
 	//↓felsen
-	//नमस्ते
+	//न म स् ते
+	
 	//↓disel
 
 	//↓kiyo

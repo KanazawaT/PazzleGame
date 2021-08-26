@@ -15,7 +15,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	DrawBox(0, 0, 320, 240, 0xffffff, TRUE);
 
-	DrawBox(640, 480, 320, 240, 0xffffff, TRUE);
+	DrawBox(640, 480, 320, 240, 0xff0000, TRUE);
 
 	//↓たみ
 	//a
@@ -26,6 +26,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//↓disel
 
 	//↓kiyo
+		//
 
 	//↓2403
 	//أهلا

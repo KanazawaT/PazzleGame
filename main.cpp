@@ -18,7 +18,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	DrawBox(640, 480, 320, 240, 0xff0000, TRUE);
 
 	//↓たみ
-	//a
+	//aaaaa:wq
 
 	//↓felsen
 	//न     म       स्      (ते)

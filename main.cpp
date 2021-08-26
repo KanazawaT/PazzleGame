@@ -13,6 +13,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	DrawPixel(320, 240, GetColor(255, 255, 255));	// 点を打つ
 
+	DrawBox(0, 0, 320, 240, 0xffffff, TRUE);
+
 	WaitKey();				// キー入力待ち
 
 	DxLib_End();				// ＤＸライブラリ使用の終了処理

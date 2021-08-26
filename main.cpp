@@ -25,6 +25,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	//«kiyo
 
+	//«2403
+
 
 	WaitKey();				// ƒL[“ü—Í‘Ò‚¿
 

@@ -340,4 +340,4 @@ ASALocalRun/
 healthchecksdb
 
 #DXlibのログファイル
-Log.txt
+/Log.txt

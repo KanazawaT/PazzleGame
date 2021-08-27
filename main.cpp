@@ -27,6 +27,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	//न     म       स्      (ते)
 	
 	//↓disel
+	//oraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 	//↓kiyo
 	SetFontSize(64);                             //サイズを64に変更

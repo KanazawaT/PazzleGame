@@ -1,4 +1,5 @@
 ﻿#include "DxLib.h"
+#include "pazzleStage.h"
 
 // プログラムは WinMain から始まります
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine, int nCmdShow)
@@ -10,6 +11,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 	{
 		return -1;			// エラーが起きたら直ちに終了
 	}
+
+	SetDrawScreen(DX_SCREEN_BACK);//描画する画面を裏画面に変更する(ScreenFlipするまで描画されなくなる)
 
 	DrawPixel(320, 240, GetColor(255, 255, 255));	// 点を打つ
 
@@ -35,6 +38,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 
 	//↓2403
 	//أهلا
+
+	ScreenFlip();
 
 	WaitKey();				// キー入力待ち
 

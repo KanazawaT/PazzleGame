@@ -18,6 +18,9 @@ void PazzleStage::draw(int width, int height) {//ƒQ[ƒ€‰æ–Ê‚Ì•\¦BƒvƒŒƒCƒ„[‚Æ”
 	ClearDrawScreen();
 
 
+	//”wŒi•\¦ ˆÈ‰º‚Ì‚Rƒpƒ^[ƒ“‚Ì‚Ç‚ê‚©‚ğ‘I‚Ô
+
+
 	//”wŒi•\¦F‘SˆêF
 	DrawBox(0, 0, width, height, GetColor(200, 200, 200), TRUE);  //
 
@@ -32,17 +35,30 @@ void PazzleStage::draw(int width, int height) {//ƒQ[ƒ€‰æ–Ê‚Ì•\¦BƒvƒŒƒCƒ„[‚Æ”
 			DrawExtendGraph(i * MAP_WIDTH, j * MAP_HEIGHT, (i + 1) * MAP_WIDTH, (j  + 1) * MAP_HEIGHT, image, TRUE);  //‰æ‘œƒtƒ@ƒCƒ‹‚Ì•\¦
 		}
 	}
-	DeleteGraph(image);  //ƒtƒ@ƒCƒ‹ƒf[ƒ^[‚ğè•ú‚·
+	DeleteGraph(image);  //ƒtƒ@ƒCƒ‹ƒf[ƒ^[‚ğÁ‹‚·‚é
 
 
 	//”wŒi•\¦FŒé”Õ‚Ì–Ú
 	DrawBox(0, 0, width, height, GetColor(200, 200, 200), TRUE);
 
-	for (int i = 0; i < width / MAP_WIDTH; i++) {
-		for (int j = 0; j < height / MAP_HEIGHT; j++) {
-			DrawBox(i * MAP_WIDTH - 3, j * MAP_HEIGHT - 3, i * MAP_WIDTH + 3, j * MAP_HEIGHT + 3, GetColor(20, 20, 20), TRUE);
-		}
+	for (int i = 1; i < width / MAP_WIDTH; i++) {
+		DrawBox(i * MAP_WIDTH - 3, 0, i * MAP_WIDTH + 3, height, GetColor(20, 20, 20), TRUE);  //cü‚Ì•\¦
 	}
+	for (int j = 1; j < height / MAP_HEIGHT; j++) {
+		DrawBox(0, j * MAP_HEIGHT - 3, width, j * MAP_HEIGHT + 3, GetColor(20, 20, 20), TRUE);  //‰¡ü‚Ì•\¦
+	}
+
+
+
+	//ƒvƒŒƒCƒ„[•\¦
+
+	play = new player();  //playerƒNƒ‰ƒX‚ğ new ‚ğ‚·‚é
+
+	play->draw();  //playerƒNƒ‰ƒX‚ÌdrawŠÖ”‚ğÀs‚·‚é
+
+	delete play;  //playerƒNƒ‰ƒX‚Ìƒf[ƒ^‚ğÁ‹‚·‚é
+
+
 
 	ScreenFlip();
 }

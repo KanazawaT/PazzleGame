@@ -2,7 +2,7 @@
 #include "DxLib.h"
 
 void Player::setPoint(int x, int y) {//プレイヤーの座標初期化
-
+	//aaa
 }
 
 void Player::move() {//キーボードorコントローラ入力読んでプレイヤー移動

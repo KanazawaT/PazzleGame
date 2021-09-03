@@ -22,7 +22,7 @@ void PazzleStage::draw(int width, int height) {//ƒQ[ƒ€‰æ–Ê‚Ì•\¦BƒvƒŒƒCƒ„[‚Æ”
 
 
 	//”wŒi•\¦F‘SˆêF
-	DrawBox(0, 0, width, height, GetColor(200, 200, 200), TRUE);  //
+	DrawBox(0, 0, width, height, GetColor(200, 200, 200), TRUE);
 
 
 

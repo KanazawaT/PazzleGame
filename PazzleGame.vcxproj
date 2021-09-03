@@ -154,10 +154,12 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="pazzleStage.cpp" />
     <ClCompile Include="player.cpp" />
+    <ClCompile Include="position.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pazzleStage.h" />
     <ClInclude Include="player.h" />
+    <ClInclude Include="position.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,9 +1,9 @@
 #pragma once
+#include "position.h"
 
 class Player {
 private:
-	int x;//プレイヤーのx座標
-	int y;//プレイヤーのy座標
+	Position pos;
 public:
 	void setPoint(int, int);//プレイヤーの座標初期化
 	void move();//キーボードorコントローラ入力読んでプレイヤー移動

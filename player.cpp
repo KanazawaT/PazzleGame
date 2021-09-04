@@ -2,7 +2,8 @@
 #include "DxLib.h"
 
 void Player::setPoint(int x, int y) {//プレイヤーの座標初期化
-	//aaa
+	this->pos.setP(x, y);
+	//この関数基本的過ぎて単体テストできないやんけ
 }
 
 void Player::move() {//キーボードorコントローラ入力読んでプレイヤー移動
